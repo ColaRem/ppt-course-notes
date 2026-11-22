@@ -2,6 +2,14 @@
   "name": "ppt-course-notes",
   "version": "0.1.0",
   "description": "Portable agent skill: turn PPT/PDF courseware into a single-file HTML study guide.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColaRem/ppt-course-notes.git"
+  },
+  "homepage": "https://github.com/ColaRem/ppt-course-notes#readme",
+  "bugs": {
+    "url": "https://github.com/ColaRem/ppt-course-notes/issues"
+  },
   "bin": {
     "ppt-course-notes": "bin/install.mjs"
   },
@@ -25,5 +33,9 @@
     "study-notes"
   ],
   "private": false,
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
 }

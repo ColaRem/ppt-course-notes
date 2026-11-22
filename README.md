@@ -53,13 +53,13 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 
 Claude Code 读取 `SKILL.md` 的 `name` / `description`，在匹配到 PPT/PDF 学习资料任务时加载。
 
-### npm / npx
+### npm
 
-从源码打包安装（不依赖 npm 仓库）：
+npm 包名：**`ppt-course-notes`**（[npm](https://www.npmjs.com/package/ppt-course-notes)）。安装后由 CLI 把技能复制到目标目录。
 
 ```powershell
-npm pack
-npm install -g .\ppt-course-notes-0.1.0.tgz
+# 安装到 DSH
+npm install -g ppt-course-notes
 ppt-course-notes install --target dsh
 ```
 
@@ -72,14 +72,15 @@ ppt-course-notes install --dir <自定义目录>
 ppt-course-notes install --target dsh --force
 ```
 
-发布到 npm 后可以直接：
+从源码打包（开发或离线使用）：
 
 ```powershell
-npm install -g ppt-course-notes
-npx ppt-course-notes install --target dsh
+npm pack
+npm install -g .\ppt-course-notes-0.1.0.tgz
+ppt-course-notes install --target dsh
 ```
 
-`package.json` 当前可直接打包与发布。发布前请确认 `ppt-course-notes` 包名可用，再执行 `npm publish`。
+`package.json` 已配置官方 registry 与 public access；发布命令为 `npm publish`。
 
 ### 其他 Agent
 
