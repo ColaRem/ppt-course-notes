@@ -1,0 +1,17 @@
+# Local working files
+work/
+*-学习资料.html
+test/
+.dsh-project-memory/
+.tmp/
+.npm-cache/
+node_modules/
+*.tgz
+
+# Python
+**/__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
